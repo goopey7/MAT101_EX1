@@ -13,12 +13,12 @@
 *.userprefs
 
 # Build results
-[Dd]ebug/
-[Dd]ebugPublic/
-[Rr]elease/
-[Rr]eleases/
-x64/
-x86/
+#[Dd]ebug/
+#[Dd]ebugPublic/
+#[Rr]elease/
+#[Rr]eleases/
+#x64/
+#x86/
 bld/
 [Oo]bj/
 [Ll]og/
@@ -332,3 +332,13 @@ ASALocalRun/
 
 # MFractors (Xamarin productivity tool) working folder 
 .mfractor/
+x64/Debug/CMP105App.exe
+CMP105App/x64/Debug/CMP105App.tlog/link.read.1.tlog
+CMP105App/x64/Debug/CMP105App.tlog/CL.write.1.tlog
+CMP105App/x64/Debug/CMP105App.tlog/CL.command.1.tlog
+CMP105App/x64/Release/CMP105App.tlog/unsuccessfulbuild
+CMP105App/x64/Debug/CMP105App.tlog/link.command.1.tlog
+CMP105App/x64/Debug/CMP105App.tlog/link.write.1.tlog
+CMP105App/x64/Debug/CMP105App.tlog/CL.read.1.tlog
+CMP105App/x64/Debug/vc141.idb
+CMP105App/x64/Debug/CMP105App.tlog/CMP105App.lastbuildstate
