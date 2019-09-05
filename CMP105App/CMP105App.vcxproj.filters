@@ -54,6 +54,12 @@
     <ClCompile Include="Framework\GameObject.cpp">
       <Filter>Framework</Filter>
     </ClCompile>
+    <ClCompile Include="MySprite.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="KinematicSprite.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="README.txt">
@@ -96,6 +102,12 @@
     </ClInclude>
     <ClInclude Include="Framework\GameObject.h">
       <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="MySprite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="KinematicSprite.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

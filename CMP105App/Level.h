@@ -27,4 +27,6 @@ private:
 	Input* input;
 	GameState* gameState;
 	AudioManager* audio;
+
+	bool play;
 };

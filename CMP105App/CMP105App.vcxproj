@@ -167,6 +167,7 @@
     <ClCompile Include="Framework\SoundObject.cpp" />
     <ClCompile Include="Framework\TileMap.cpp" />
     <ClCompile Include="Framework\Vector.cpp" />
+    <ClCompile Include="KinematicSprite.cpp" />
     <ClCompile Include="Level.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="MySprite.cpp" />
@@ -186,6 +187,7 @@
     <ClInclude Include="Framework\SoundObject.h" />
     <ClInclude Include="Framework\TileMap.h" />
     <ClInclude Include="Framework\Vector.h" />
+    <ClInclude Include="KinematicSprite.h" />
     <ClInclude Include="Level.h" />
     <ClInclude Include="MySprite.h" />
   </ItemGroup>
