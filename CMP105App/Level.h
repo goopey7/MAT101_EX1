@@ -4,6 +4,7 @@
 #include "Framework/Input.h"
 #include "Framework/AudioManager.h"
 #include "Framework/GameState.h"
+#include "KinematicSprite.h"
 #include <string>
 #include <iostream>
 
@@ -29,4 +30,8 @@ private:
 	AudioManager* audio;
 
 	bool play;
+
+	sf::Texture ballTexture;
+
+	KinematicSprite ball;
 };

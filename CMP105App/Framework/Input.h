@@ -19,7 +19,8 @@ public:
 	// Functions for setting key as pressed, released and checking current state.
 	void setKeyDown(int key);
 	void setKeyUp(int key);
-	bool isKeyDown(int key);
+	bool isKeyDown(int key) const;
+	bool isKeyJustDown(int key) const;
 
 	// Functions are mouse input, including getting and setting current position and mouse button presses.
 	void setMouseX(int lx);
@@ -31,10 +32,12 @@ public:
 	bool isMouseLDown();
 	void setMouseRDown(bool down);
 	bool isMouseRDown();
+	void captureLastKeys();
 	
 private:
 	// Array of booleans representing keys (pressed = true, released = false)
 	bool keys[256]{ false };
+	bool oldKeys[256]{ false };
 	// Mouse variable
 	Mouse mouse;
 };

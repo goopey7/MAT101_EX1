@@ -1,4 +1,6 @@
 #include "Input.h"
+#include <algorithm>
+#include <iterator>
 
 void Input::setKeyDown(int key)
 {
@@ -16,7 +18,7 @@ void Input::setKeyUp(int key)
 	}
 }
 
-bool Input::isKeyDown(int key)
+bool Input::isKeyDown(int key) const
 {
 	if (key >= 0)
 	{
@@ -67,5 +69,21 @@ void Input::setMouseRDown(bool down)
 bool Input::isMouseRDown()
 {
 	return mouse.right;
+}
+
+void Input::captureLastKeys()
+{
+	std::copy(std::begin(keys), std::end(keys), std::begin(oldKeys)); //copy over 
+}
+
+
+bool Input::isKeyJustDown(int key) const
+{
+	bool returnVal = false;
+	if (key >= 0)
+	{
+		returnVal =  keys[key] && !oldKeys[key];
+	}
+	return returnVal;
 }
 
