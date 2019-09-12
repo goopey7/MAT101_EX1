@@ -73,7 +73,7 @@ bool Input::isMouseRDown()
 
 void Input::captureLastKeys()
 {
-	std::copy(std::begin(keys), std::end(keys), std::begin(oldKeys)); //copy over 
+	std::copy(std::begin(keys), std::end(keys), stdext::checked_array_iterator<bool*>(oldKeys, 256));
 }
 
 
