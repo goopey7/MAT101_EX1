@@ -1,6 +1,6 @@
 #pragma once
 #include "MySprite.h"
-#include "framework/Vector.h"
+#include "Framework/Vector.h"
 
 class KinematicSprite :
 	public MySprite

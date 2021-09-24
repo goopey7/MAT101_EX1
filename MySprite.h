@@ -1,6 +1,6 @@
 #pragma once
-#include "SFML\Graphics.hpp"
-#include "Framework\Input.h"
+#include "SFML/Graphics.hpp"
+#include "Framework/Input.h"
 
 class MySprite : public sf::RectangleShape
 {

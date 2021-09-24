@@ -7,7 +7,7 @@
 
 #include "SoundObject.h"
 #include "MusicObject.h"
-#include "SFML\Audio.hpp"
+#include "SFML/Audio.hpp"
 
 class AudioManager
 {

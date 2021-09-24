@@ -3,7 +3,7 @@
 // @author Paul Robertson
 
 #pragma once
-#include "SFML\System\Vector2.hpp"
+#include "SFML/System/Vector2.hpp"
 #include <math.h>
 
 class Vector

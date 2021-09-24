@@ -28,8 +28,7 @@ void KinematicSprite::update(float dt)
 
 	// calculate direction and move
 	direction = target - getPosition();
-	direction = Vector::normalise(direction);
-	
+	direction = direction / (sqrt(direction.x*direction.x+direction.y*direction.y));
 	////if you want to make the line just straight across the screen uncomment the next 1 lines
 	//direction = sf::Vector2f(1,0);
 	////////////////////////////MATHS 101 CODE HERE WEEK 1 & 2 Kinematics ////////////////////////////////////////////////
@@ -63,29 +62,5 @@ void KinematicSprite::update(float dt)
 
 	//THIS IS SOME GAMEPLAY CODE FEEL FREE TO CHANGE IT AND SEE WHAT HAPPENS 
 	// if object is close enough to taget
-	if (Vector::magnitude(target - getPosition()) < 10.f)
-	{
-		moving = false;
-		setPosition(target);
-	}
 
-	// reset object (position and velocity)
-	if (input->isKeyDown(sf::Keyboard::Num1))
-	{
-		setPosition(0, 0);
-		setVelocity(0, 0);
-		moving = true;
-	}
-	if (input->isKeyDown(sf::Keyboard::Num2))
-	{
-		setPosition(0, 250);
-		setVelocity(0, 0);
-		moving = true;
-	}
-	if (input->isKeyDown(sf::Keyboard::Num3))
-	{
-		setPosition(0, 500);
-		setVelocity(0, 0);
-		moving = true;
-	}
 }
